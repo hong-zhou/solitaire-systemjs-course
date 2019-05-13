@@ -46,8 +46,6 @@ bat 'del /S /Q *'
 stage 'Browser Testing'
 parallel chrome: {
     runTests("Chrome")
-}, edge: {
-    runTests("Edge")
 }
 
 def runTests(browser) {
